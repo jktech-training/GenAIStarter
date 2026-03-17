@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>JK Tech Gen AI Starter Modules</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+
+        <div class="logo">
+            <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+            <span>JK Tech</span>
+        </div>
+
+        <ul>
+            <li id="nav-intro" onclick="showTab('intro')">Introduction</li>
+            <li id="nav-prompting" onclick="showTab('prompting')">Prompting Techniques</li>
+            <li id="nav-copilot" onclick="showTab('copilot')">Copilot Commands</li>
+            <li id="nav-quiz" onclick="showTab('quiz')">Session Quiz</li>
+            <li id="nav-assessment" onclick="showTab('assessment')">Final Assessment</li>
+        </ul>
+
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+
+        <div class="topbar">
+            <h2>Gen AI Training Modules</h2>
+        </div>
+
+        <div class="content">
+
+            <section id="intro" class="tab active">
+                <h1>Introduction</h1>
+                    <p>
+                    The Gen AI Starter resources provide comprehensive training materials for a multi-day workshop focused on Generative AI and its application in Agile-driven business transformations. 
+                    Led by trainer Chirantan Lonkar, the sessions are designed to give participants a strong technical and conceptual foundation in modern artificial intelligence systems, particularly Large Language Models (LLMs). 
+                    The workshop begins with an introduction to the core principles behind LLMs, including tokenisation, embedding layers, and semantic similarity, helping participants understand 
+                    how AI models interpret language, represent meaning, and generate responses based on contextual understanding.
+                    </p>
+                    <p>
+                    A major focus of the training is Retrieval-Augmented Generation (RAG), an architecture that combines language models with external knowledge sources to produce more accurate and reliable outputs. 
+                    The sessions explain how RAG helps mitigate model hallucinations by retrieving relevant information from external databases and grounding AI responses in factual data. 
+                    Through practical demonstrations, participants learn how to implement AI-powered solutions such as agentic workflows, automated document processing pipelines, 
+                    and intelligent search systems using modern frameworks like LangChain and vector databases.
+                    </p>
+                    <p>
+                    The workshop also explores several real-world enterprise use cases where Generative AI can significantly enhance productivity and innovation. 
+                    These include modernising legacy databases, automating code reviews, generating technical documentation, and improving project management through AI-driven insights and automation. 
+                    By examining these applications, participants gain a clear understanding of how organisations can integrate generative technologies into existing workflows to accelerate digital transformation.
+                    </p>
+                    <p>
+                    Overall, the sessions highlight the shift from traditional deterministic machine learning approaches toward non-deterministic generative systems that are capable of processing large volumes of unstructured data. 
+                    By leveraging these technologies, organisations can build intelligent solutions that enhance decision-making, automate complex tasks, and significantly speed up software development and business operations.
+                    </p>
+            </section>
+
+            <section id="prompting" class="tab">
+                <h1>Prompting Techniques</h1>
+
+                    <p>
+                    Refer to the complete training document provided here: 
+                    <a href="https://jktechnosoftltd.sharepoint.com/:b:/r/sites/DoucumentRepository/CompetencyDevelopment/Competency%20Development%20Data/Materials/Gen%20AI%20Starter%20-%20Delivery/Gen%20AI%20Starter%20-%20Agile%20Transformation/prompt_examples+(1).pdf?csf=1&web=1&e=HOKiz8" target="_blank">Prompting Techniques Document</a>.
+                    </p>
+                    <p>
+                    This module introduces key prompting techniques and frameworks that enable effective interaction with Generative AI systems. 
+                    These techniques are designed to improve clarity, structure, and accuracy of AI-generated outputs, especially when dealing with complex analytical or business problems. By applying structured prompting approaches, users can guide AI models to produce more relevant, reliable, and context-aware responses.
+                    </p>
+                    <p>
+                    The <b>TRACE framework</b>, which stands for Task, Role, Audience, Constraints, and Elaboration, focuses on structuring prompts in a comprehensive manner. 
+                    It ensures that the AI clearly understands the objective, the perspective it should adopt, the intended audience, and any limitations or specific details required. This approach is particularly useful when presenting insights or communicating complex trade-offs in business scenarios.
+                    </p>
+                    <p>
+                    The <b>CARE framework</b>, consisting of Challenge, Action, Result, and Elaboration, is primarily used for analytical and problem-solving tasks. 
+                    It helps in breaking down complex issues into structured steps, enabling the AI to generate actionable outputs such as scripts, reports, or root cause analyses. This makes it highly effective in data-driven environments where clarity and precision are essential.
+                    </p>
+                    <p>
+                    The <b>CRITIC framework</b> is an iterative approach that allows users to refine and improve outputs by engaging the AI as a collaborator. 
+                    It involves critiquing an initial idea, revising it, improving the solution, testing it, and comparing results. This method is especially useful for enhancing visualizations, reports, or strategies to make them more impactful and decision-oriented.
+                    </p>
+                    <p>
+                    The <b>APE framework</b>, which stands for Abstract, Package, and Explain, is designed to transform one-time solutions into reusable tools. 
+                    It enables users to generalize logic, package it into reusable formats such as functions, and provide clear documentation so that others can easily use and scale the solution within a team or organization.
+                    </p>
+                    <p>
+                    <b>Zero-shot prompting</b> is a technique where the AI is given a task without any prior examples. 
+                    The effectiveness of this method depends entirely on how clearly and precisely the instructions are defined. It is particularly useful in situations where quick insights are required from new or unfamiliar data without the availability of sample outputs.
+                    </p>
+                    <p>
+                    <b>Few-shot prompting</b> improves performance by providing a small number of examples that demonstrate the expected input-output pattern. 
+                    These examples help the AI better understand context, intent, and structure, making it especially effective for tasks such as classification, summarization, and pattern recognition in unstructured data.
+                    </p>
+                    <p>
+                    <b>Chain-of-thought</b> prompting enhances reasoning by encouraging the AI to think step-by-step before arriving at a final answer. 
+                    This approach is particularly beneficial for solving complex problems involving calculations, logic, or multi-step decision-making, as it increases both accuracy and transparency in the results.
+                    </p>
+                    <p>
+                    <b>ReAct prompting</b> combines reasoning with action by allowing the AI to interact with external tools and data sources. 
+                    It follows a structured cycle of thought, action, and observation, enabling the model to gather real-time information, validate its reasoning, and produce more grounded and reliable outputs.
+                    </p>
+                    <p>
+                    <b>Meta prompting</b> is a higher-level technique that focuses on generating better prompts rather than direct answers. 
+                    It involves guiding the AI to act as a prompt designer, helping users convert vague or ambiguous requirements into structured, effective prompts that can be used for further analysis or problem-solving.
+                    </p>
+            </section>
+
+            <section id="copilot" class="tab">
+                <h1>Github Copilot Commands</h1>
+                    <p>
+                    Refer to the complete document provided here: 
+                    <a href="https://jktechnosoftltd.sharepoint.com/:b:/r/sites/DoucumentRepository/CompetencyDevelopment/Competency%20Development%20Data/Materials/Gen%20AI%20Starter%20-%20Delivery/Gen%20AI%20Starter%20-%20Agile%20Transformation/GitHub_Copilot_Commands_Reference.pdf?csf=1&web=1&e=UeBiS4" target="_blank">
+                    Github Copilot Commands Reference
+                    </a>
+                    </p>
+                    <p>
+                    GitHub Copilot provides powerful commands to assist developers in code generation, debugging, documentation, and workflow automation directly within IDEs and CLI environments.
+                    </p>
+                    <p>
+                    Core slash commands such as <b>/explain</b>, <b>/fix</b>, <b>/tests</b>, and <b>/doc</b> help in understanding code, fixing errors, generating unit tests, and adding documentation. 
+                    These commands can be used on selected code or entire files to improve productivity.
+                    </p>
+                    <p>
+                    Project and workflow commands like <b>/new</b> and <b>/newNotebook</b> allow quick scaffolding of applications and notebooks, while commands like <b>/clear</b> and <b>/help</b> assist in managing chat sessions and discovering features.
+                    </p>
+                    <p>
+                    Copilot also supports contextual querying using participants such as <b>@workspace</b>, <b>@vscode</b>, <b>@terminal</b>, and <b>@github</b>, enabling users to ask questions about codebases, tools, terminal commands, and repositories.
+                    </p>
+                    <p>
+                    Context variables like <b>#file</b>, <b>#selection</b>, <b>#editor</b>, and <b>#codebase</b> allow attaching relevant code or workspace data to prompts, resulting in more accurate and context-aware responses.
+                    </p>
+                    <p>
+                    In the CLI environment, Copilot offers commands for session management, directory access, and configuration, along with input modes such as slash commands, shell execution, file references, and natural language prompts.
+                    </p>
+                    <p>
+                    Keyboard shortcuts further enhance productivity by enabling quick access to chat, inline suggestions, and command execution within development environments.
+                    </p>
+            </section>
+
+            <section id="quiz" class="tab">
+                <h1>Session Quiz</h1>
+
+                    <p>
+                    The questions are based on concepts covered across all training sessions so 
+                    make sure you have reviewed the session materials before attempting the quiz. <br>
+                    Session Recordings: 
+                    <a href="https://jktechnosoftltd.sharepoint.com/:f:/r/sites/DoucumentRepository/CompetencyDevelopment/Competency%20Development%20Data/Recordings/Gen%20AI%20Starter%20-%20Agile%20Transformation?csf=1&web=1&e=6VefsH" target="_blank">
+                    Click Here <br>
+                    </a>
+                    </p>
+
+                    <p>
+                    Please complete the quiz using the following link:
+                    <a href="https://forms.office.com/pages/responsepage.aspx?id=-ue6p_ENYkWlVBapX1TIzlzTnD8DSE9Gp0N1LSGRVDBURUxYNUxIUDZHSjkzSkdNQTFLRkFYTFJEVi4u&route=shorturl" target="_blank">
+                    Session Quiz Link <br>
+                    </a>
+                    </p>
+            </section>
+
+            <section id="assessment" class="tab">
+                <h1>Final Assessment</h1>
+
+                    <p>
+                    This assessment focuses on designing a Skill Matrix and Certification Tracking System. The objective is to build a solution that enables efficient tracking of employee skills, certifications, and training progress, along with GenAI-powered querying capabilities.
+                    </p>
+                    <p>
+                    <a href="https://jktechnosoftltd.sharepoint.com/:b:/s/DoucumentRepository/CompetencyDevelopment/IQDY8XL0BA_gRKtEldTOWPYrAcZlUlNtuBqFCTchRjS0IS4?e=BuBFw7" target="_blank">
+                    View Problem Statement
+                    </a>
+                    </p>
+            </section>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
