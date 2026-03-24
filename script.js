@@ -38,3 +38,22 @@ showTab("intro");
 }
 
 });
+
+let acc = document.querySelectorAll(".accordion-btn");
+
+acc.forEach(button => {
+button.addEventListener("click", function(){
+
+let content = this.nextElementSibling;
+
+if(content.style.display === "block"){
+content.style.display = "none";
+}else{
+document.querySelectorAll(".accordion-content").forEach(c=>{
+c.style.display = "none";
+});
+content.style.display = "block";
+}
+
+});
+});

@@ -203,3 +203,32 @@ text-decoration:none;
 a:hover{
 text-decoration:underline;
 }
+
+.accordion-btn{
+width:100%;
+text-align:left;
+padding:15px;
+font-size:16px;
+font-weight:600;
+background:#ffffff;
+border:none;
+border-bottom:1px solid #ddd;
+cursor:pointer;
+transition:0.3s;
+}
+
+.accordion-btn:hover{
+background:#f0f6fb;
+}
+
+.accordion-content{
+display:none;
+padding:15px;
+background:#ffffff;
+border-bottom:1px solid #ddd;
+}
+
+ul{
+padding-left:20px;
+line-height:1.6;
+}
