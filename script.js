@@ -57,3 +57,36 @@ content.style.display = "block";
 
 });
 });
+
+let currentSlide = 0;
+const slides = document.querySelectorAll(".slide");
+
+function showSlide(index){
+slides.forEach(slide => slide.classList.remove("active"));
+slides[index].classList.add("active");
+}
+
+function changeSlide(direction){
+currentSlide += direction;
+
+if(currentSlide < 0){
+currentSlide = slides.length - 1;
+}
+
+if(currentSlide >= slides.length){
+currentSlide = 0;
+}
+
+showSlide(currentSlide);
+}
+
+/* Image expand modal */
+
+function openModal(img){
+document.getElementById("imgModal").style.display = "flex";
+document.getElementById("modalImg").src = img.src;
+}
+
+function closeModal(){
+document.getElementById("imgModal").style.display = "none";
+}

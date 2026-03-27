@@ -48,6 +48,49 @@
                     <p>
                     A key highlight of the program is <b>Retrieval-Augmented Generation (RAG)</b>—a powerful architecture that combines language models with external knowledge sources to produce more accurate, reliable, and context-grounded outputs. By integrating vector databases and retrieval mechanisms, RAG helps reduce hallucinations and enables enterprise-grade AI applications.
                     </p>
+                    <div class="concept-slider">
+
+                        <button class="nav prev" onclick="changeSlide(-1)">&#10094;</button>
+
+                            <div class="slide-container">
+
+                            <div class="slide active">
+                            <img src="images/GEN AI workflow.png" onclick="openModal(this)">
+                            <div class="caption">
+                            <h3>Generative AI Workflow</h3>
+                            </div>
+                            </div>
+
+                            <div class="slide">
+                            <img src="images/embeddings.jpg" onclick="openModal(this)">
+                            <div class="caption">
+                            <h3>Embeddings & Semantic Similarity</h3>
+                            </div>
+                            </div>
+
+                            <div class="slide">
+                            <img src="images/RAG Workflow.png" onclick="openModal(this)">
+                            <div class="caption">
+                            <h3>Retrieval Augmented Generation</h3>
+                            </div>
+                            </div>
+
+                            <div class="slide">
+                            <img src="images/Agentic AI.png" onclick="openModal(this)">
+                            <div class="caption">
+                            <h3>Agentic AI</h3>
+                            </div>
+                            </div>
+
+                            </div>
+
+                        <button class="nav next" onclick="changeSlide(1)">&#10095;</button>
+
+                        </div>
+                        <!-- Image Modal -->
+                        <div id="imgModal" class="modal" onclick="closeModal()">
+                        <img id="modalImg">
+                    </div>
                     <p>
                     Throughout the series, participants also explore practical implementations such as agentic workflows, intelligent search systems, and automated document processing using modern frameworks like LangChain and vector databases. Real-world use cases—including code automation, documentation generation, and AI-powered project management—demonstrate how organizations can embed Generative AI into existing workflows to accelerate innovation.
                     </p>
